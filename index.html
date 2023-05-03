@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocketair</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="navleft">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+            <div id="rocket">
+                <h3>RocketAir</h3>
+            </div>
+            <div id="navright">
+                <button><h4>Get In Touch </h4><div id="ho"></div></button>
+                <div id="circle">
+                    <div id="ct">
+                        <div id="c"></div>
+                        <div id="c"></div>
+                    </div>
+                    <div id="cb">
+                        <div id="c"></div>
+                        <div id="c"></div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div id="b1"><h1>Digital</h1></div>
+            <div id="b2"><h1>experiences</h1><div id="line"></div><h1>that</h1></div>
+            <div id="b3"><h1>Win by Design </h1><sup id="sup">TM</sup></div>
+            <h6>CHECK OUT THE HYPE</h6>
+            
+        </div>
+        <div id="menu">
+            <div id="menuleft">
+                <div id="leftbox">
+                    <div id="pic">
+                        <img src="https://assets.website-files.com/620970e0fc117e313fe36ebd/628f3a391956b4593811ca66_thumb_newlimit.jpg" alt="">
+                    </div>
+                    <div id="pictxt">
+                        <h1>New Limit</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="b9right">
+                <div id="b9righta"><h1>Work</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>About</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>Services</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>Verticals</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>Carrers</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>Ideas</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>News</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>Contact</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>FAQ</h1><div id="ho2"></div></div>
+            </div>
+        </div>
+        <div id="video1">
+            <video src="https://assets.website-files.com/6205ecdcec584c56193d6121/6306565a2fc10d28a0829211_RocketAir_Design_Reel_2022_Thumbnail_1920_2-transcode.mp4" autoplay loop muted ></video>
+            <div id="circle1">play
+            </div>
+
+        </div>
+        <div id="box2">
+            <div id="box2content"><h1>RocketAir is a design and strategy company with an adaptive approach to problem solving.</h1></div>
+            <div id="box2content2"><h1>We call it</h1><div id="line2"></div></div>
+        </div>
+        <div id="box3">
+            <h1>ORBITAL <br>
+                DESIGN</h1>
+                <div id="box3-button"><button><h4>Get to Know us</h4><div id="ho1"></div></button>
+            </div>
+        </div>
+        <!-- <div id="box4">
+            <video src="https://www.dropbox.com/s/t7hz8zhzqlr0cpx/Orbital-3d_home.mp4?raw=1" autoplay loop muted></video>
+        </div> -->
+        <div id="box5">
+            <div id="box5a"><h1>Brand</h1><div id="arowcircle"><i class="ri-arrow-right-line"></i></div><div id="lo"></div></div>
+            <div id="box5b"><h1>Product</h1><div id="arowcircle1"><i class="ri-arrow-right-line"></i></div><div id="lo1"></div></div>
+            <div id="box5c"><h1>Motion</h1><div id="arowcircle2"><i class="ri-arrow-right-line"></i></div><div id="lo2"></div></div>
+            <div id="box5d">
+                <img src="Screenshot (59).png" alt="">
+                <div id="v1"><video src="https://assets.website-files.com/6205ecdcec584c56193d6121/625049f25321603541f849ab_Brand_Work_noWindow_540x1080-transcode.mp4" autoplay loop muted></video></div>
+                <div id="v2"><video src="https://assets.website-files.com/6205ecdcec584c56193d6121/62bd5211d2734d33b4f1f3e8_Product_Work_noWindow_540x1080_v2-transcode.mp4" autoplay loop muted></video></div>
+                <div id="v3"><video src="https://assets.website-files.com/6205ecdcec584c56193d6121/62504a9bfb995aa187002397_Motion_Work_noWindow_540x1080-transcode.mp4" autoplay loop muted></video></div>
+            </div>
+        </div>
+        <div id="box6">
+            <h1>We partner with <br>forward-thinking <br>enterprises and startups.</h1>
+        </div>
+        <div id="box7">
+            <div id="box7a">
+                <img src="https://assets.website-files.com/620970e0fc117e313fe36ebd/63d7e8af53f4b8cec99e9421_logo-terra.svg" alt="">
+                <p>Scalable design for a global forest accelerator. We partnered with the growing climate tech startup to evolve their brand and web experience for a better future.</p>
+            </div>
+            <div id="box7a">
+                <img src="https://assets.website-files.com/620970e0fc117e313fe36ebd/6230788a6672557bb9fd96c8_logo_Coursera.svg" alt="">
+                <p>Understanding what learners want. Using insights from user interviews, we helped the edtech startup Coursera evolve the UX of their MasterTrack® Certificate product to drive enrollment.</p>
+            </div>
+            <div id="box7a">
+                <img src="https://assets.website-files.com/620970e0fc117e313fe36ebd/624db668954b1077a51d3dab_qed-investors.svg" alt="">
+                <p>A trusted design partner for the premier VC in fintech. With strategy-led, systematic design, we help QED’s portfolio companies bring new brands and products to market.</p>
+            </div>
+            <div id="box7a">
+                <img src="https://assets.website-files.com/620970e0fc117e313fe36ebd/624ed1a4baf7a9339f3a7866_software_ag.svg" alt="">
+                <p>Bridging the gap for the connected enterprise. Using abstract 3D models, we created unique animation to show how Software AG helps businesses reach their digitally transformed future.</p>
+            </div>
+            <div id="box7a">
+                <img src="https://assets.website-files.com/620970e0fc117e313fe36ebd/63d7e9819f22e10fe22128bb_logo_qlik.svg" alt="">
+                <p>Creative fuel for a leader in real-time data and analytics. Augmenting their marketing team, we helped Qlik drive engagement among internal and external audiences.</p>
+            </div>
+            <div id="circle2">Drag</div>
+        </div>
+        <div id="scrollpage">
+                <h1>WORK</h1>
+         <div id="scrollimg">
+            <img src="https://assets.website-files.com/620970e0fc117e313fe36ebd/628f3a391956b4593811ca66_thumb_newlimit.jpg" alt="">
+            <img src="https://assets.website-files.com/620970e0fc117e313fe36ebd/631047a405bc513ad86a56ae_surf-internet-thumbnail.jpg" alt="">
+            <img src="https://assets.website-files.com/620970e0fc117e313fe36ebd/6268fab393803a81e2d7a89e_focus-V_thumbnail.jpg" alt="">
+        </div>
+        </div>
+        <div id="box8">
+            <div id="b8a"><h1>Take a look</h1></div>
+            <div id="bo8">
+                <div id="b8b"><h1>at what
+                </h1></div>
+                <div id="b8line"></div>
+                <div id="b8c"><h1>we can
+            </div>
+        </h1></div>
+            <div id="b8d"><h1>do for you</h1></div>
+            <div id="allwork">
+                <div id="alw">All Work</div>
+            </div>
+        </div>
+        <div id="box9">
+            <div id="b9left">
+                <h1>Fuel for Thought</h1>
+                <h4>A casual hello from the RocketAir Crew filled with insights,  <br> inspiration, and good vibes only.</h4>
+                <img src="https://assets.website-files.com/6205ecdcec584c56193d6121/6246217a2a1efb208cb41ffa_badge-fueled_news.svg" alt="">
+                <input type="text" placeholder="E-Mail"> 
+                <button>Subscribe</button>
+            </div>
+            <div id="b9right">
+                <div id="b9righta"><h1>Work</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>About</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>Services</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>Verticals</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>Carrers</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>Ideas</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>News</h1><div id="ho2"></div></div>
+                <div id="b9righta"><h1>Contact</h1><div id="ho2"></div></div>
+                <div id="contacticons">
+                    <div id="icons"><i class="ri-twitter-fill"></i><div id="ho2"></div></div>
+                    <div id="icons"><i class="ri-linkedin-fill"></i><div id="ho2"></div></div>
+                    <div id="icons"><i class="ri-youtube-fill"></i><div id="ho2"></div></div>
+                    <div id="icons"><i class="ri-instagram-fill"></i><div id="ho2"></div></div>
+                    <div id="privacy">Privicy Policy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
